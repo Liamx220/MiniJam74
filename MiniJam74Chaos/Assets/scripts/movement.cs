@@ -5,6 +5,7 @@ using UnityEngine;
 public class movement : MonoBehaviour
 {
     public float speed = 1;
+    public GameObject gameOverScreen;
     void Start()
     {
         
@@ -22,5 +23,14 @@ public class movement : MonoBehaviour
             transform.Rotate(new Vector3(0, 0, -20 * speed * Time.deltaTime));
         }
         
+    }
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        //if (col.gameObject.tag == "enemy")
+        //{
+        Destroy(gameObject);
+        Time.timeScale = 0f;
+        gameOverScreen.SetActive(true);
+        //}
     }
 }
