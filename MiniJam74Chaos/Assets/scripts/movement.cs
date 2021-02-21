@@ -1,15 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class movement : MonoBehaviour
 {
     public float speed = 1;
     public GameObject gameOverScreen;
+    public Text Scr;
+    public Text HighScr;
+
+    
     void Start()
     {
-        
+        HighScr.text = "Highscore: " + PlayerPrefs.GetFloat("HighScore", 0).ToString("0.0");
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -22,15 +28,28 @@ public class movement : MonoBehaviour
         {
             transform.Rotate(new Vector3(0, 0, -20 * speed * Time.deltaTime));
         }
+
         
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
-        //if (col.gameObject.tag == "enemy")
-        //{
-        Destroy(gameObject);
-        Time.timeScale = 0f;
-        gameOverScreen.SetActive(true);
-        //}
+
+            Destroy(gameObject);
+            Time.timeScale = 0f;
+            gameOverScreen.SetActive(true);
+            Scr.text = "Score: " + timer.currentTime.ToString("0.0");
+
+            if (timer.currentTime > PlayerPrefs.GetFloat("HighScore", 0))
+            {
+                PlayerPrefs.SetFloat("HighScore", timer.currentTime);
+                HighScr.text = "Highscore: " + timer.currentTime.ToString("0.0");
+            }
+            
+            
+            
+            
+        
+
+   
     }
 }

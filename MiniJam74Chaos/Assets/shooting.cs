@@ -14,10 +14,13 @@ public class shooting : MonoBehaviour
     //Time.time >= timestamp &&
     private float timestamp;
     public AudioSource sounds;
+
+    private shake Shake;
     //public AudioSource music;
 
     private void Start()
     {
+
         sounds = GetComponent<AudioSource>();
         //music = GetComponent<AudioSource>();
     }

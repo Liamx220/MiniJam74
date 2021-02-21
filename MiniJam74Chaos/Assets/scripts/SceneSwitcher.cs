@@ -8,7 +8,7 @@ public class SceneSwitcher : MonoBehaviour
     //public Animator sceneAnimation;
     void Start()
     {
-
+        Time.timeScale = 1f;
         //SceneManager.LoadScene (sceneBuildIndex: 1);
     }
 
@@ -17,7 +17,7 @@ public class SceneSwitcher : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-           
+            Time.timeScale = 1f;
             SceneManager.LoadScene (sceneBuildIndex: 1);
         } 
     }

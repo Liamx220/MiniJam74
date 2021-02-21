@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class shootCheck : MonoBehaviour
 {
@@ -23,7 +24,8 @@ public class shootCheck : MonoBehaviour
         
         if (col.gameObject.tag == "wall")
         {
-            
+    
+
             print("test");
             Destroy(gameObject);
         }

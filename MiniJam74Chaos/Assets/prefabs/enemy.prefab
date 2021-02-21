@@ -98,9 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5715f2189d86d1b7b94de13080c7332f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 2
   speed: 1
   target: {fileID: 3871341055559851861, guid: efc82d1ea0fef029fb4514aaf2e4ec7b, type: 3}
+  in_Game_score: {fileID: 8431613392280221517, guid: 3e95c477dda47e873bd63992c63fe6ad,
+    type: 3}
   explosionPrefab: {fileID: 3168934457548844123, guid: 324631735ba2dc0aeabaa2b33d27d7b1,
     type: 3}
 --- !u!50 &-5431807025965073367
