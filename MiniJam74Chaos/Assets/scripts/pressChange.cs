@@ -18,7 +18,7 @@ public class pressChange : MonoBehaviour
         if (Input.GetKeyDown("8"))
         {
             score.Score = 0;
-            SceneManager.LoadScene (sceneBuildIndex: 1);
+            SceneManager.LoadScene (sceneBuildIndex: 4);
             score.Score = 0;
         }
 
