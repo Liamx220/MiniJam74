@@ -223,7 +223,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!61 &8606100
+--- !u!61 &8606097
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -236,44 +236,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.011857435, y: 0.18181252}
+  m_Offset: {x: 0.013130069, y: 0.65204036}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 14, y: 14}
+    oldSize: {x: 12.8, y: 12.8}
     newSize: {x: 1.6, y: 1.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.47340414, y: 1.4140866}
-  m_EdgeRadius: 0
---- !u!61 &8606101
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8606095}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.03161955, y: 0.35176778}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 14, y: 14}
-    newSize: {x: 1.6, y: 1.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.6354237, y: 0.26787624}
+  m_Size: {x: 1.326608, y: 7.190115}
   m_EdgeRadius: 0
 --- !u!61 &8606102
 BoxCollider2D:
@@ -285,21 +259,21 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.023811102, y: -0.26985815}
+  m_Offset: {x: -0.03946185, y: -0.46059322}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 14, y: 14}
+    oldSize: {x: 12.8, y: 12.8}
     newSize: {x: 1.6, y: 1.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6977634, y: 1.031055}
+  m_Size: {x: 4.3024545, y: 4.56593}
   m_EdgeRadius: 0
 --- !u!82 &8606104
 AudioSource:
@@ -321,7 +295,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.6550388
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -2325,17 +2299,17 @@ PrefabInstance:
     - target: {fileID: 3871341055559851861, guid: efc82d1ea0fef029fb4514aaf2e4ec7b,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.22928943
+      value: 0.1822924
       objectReference: {fileID: 0}
     - target: {fileID: 3871341055559851861, guid: efc82d1ea0fef029fb4514aaf2e4ec7b,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.22928943
+      value: 0.1822924
       objectReference: {fileID: 0}
     - target: {fileID: 3871341055559851861, guid: efc82d1ea0fef029fb4514aaf2e4ec7b,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.22928943
+      value: 0.1822924
       objectReference: {fileID: 0}
     - target: {fileID: 3871341055559851861, guid: efc82d1ea0fef029fb4514aaf2e4ec7b,
         type: 3}
@@ -2391,7 +2365,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 73c3c8ca14c90b1ed98e2def68b0e51a,
+      objectReference: {fileID: 21300000, guid: 054bf55a0d4630983b4f0a489f515249,
         type: 3}
     - target: {fileID: 3871341055559851862, guid: efc82d1ea0fef029fb4514aaf2e4ec7b,
         type: 3}
@@ -2415,8 +2389,13 @@ PrefabInstance:
       objectReference: {fileID: 798733650}
     - target: {fileID: 3871341056049069864, guid: efc82d1ea0fef029fb4514aaf2e4ec7b,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871341056049069864, guid: efc82d1ea0fef029fb4514aaf2e4ec7b,
+        type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.71
+      value: 5.49
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3871341055559851859, guid: efc82d1ea0fef029fb4514aaf2e4ec7b, type: 3}
