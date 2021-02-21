@@ -18,7 +18,7 @@ public class SceneSwitcher : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             Time.timeScale = 1f;
-            SceneManager.LoadScene (sceneBuildIndex: 1);
+            SceneManager.LoadScene (sceneBuildIndex: 4);
         } 
     }
 
